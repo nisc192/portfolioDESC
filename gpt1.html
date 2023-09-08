@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Manter Valor da Caixa de Texto</title>
+</head>
+<body>
+    <input type="text" id="minhaCaixaDeTexto" placeholder="Digite algo aqui">
+    <button id="meuBotao">Clique-me</button>
+
+    <script>
+        // Captura o elemento de entrada de texto e o botão
+        const minhaCaixaDeTexto = document.getElementById("minhaCaixaDeTexto"); caixa1
+        const meuBotao = document.getElementById("meuBotao");
+
+        // Verifica se há um valor salvo no localStorage
+        if (localStorage.getItem("valorDaCaixaDeTexto")) {
+            minhaCaixaDeTexto.value = localStorage.getItem("valorDaCaixaDeTexto");
+        }
+
+        // Adiciona um ouvinte de evento ao botão para salvar o valor da caixa de texto no localStorage
+        meuBotao.addEventListener("click", function() {
+            const valorDaCaixaDeTexto = minhaCaixaDeTexto.value;
+            localStorage.setItem("valorDaCaixaDeTexto", valorDaCaixaDeTexto);
+            console.log("O valor da caixa de texto foi salvo: " + valorDaCaixaDeTexto);
+        });
+    </script>
+</body>
+</html>
+
+
+//Exemplo de Captura de Valor de Caixa de Texto
+
+<body>
+    <input type="text" id="minhaCaixaDeTexto" placeholder="Digite algo aqui">
+    <button id="meuBotao">Clique-me</button>
+
+        // Captura o elemento de entrada de texto e o botão
+        const minhaCaixaDeTexto = document.getElementById("minhaCaixaDeTexto");
+        const meuBotao = document.getElementById("meuBotao");
+
+        // Adiciona um ouvinte de evento ao botão para capturar o valor da caixa de texto e exibi-lo no console
+        meuBotao.addEventListener("click", function() {
+            const valorDaCaixaDeTexto = minhaCaixaDeTexto.value;
+            console.log("O valor da caixa de texto é: " + valorDaCaixaDeTexto);
+        });
+
+</body>
+

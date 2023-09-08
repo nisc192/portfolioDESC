@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funcionario.js"></script>
+    <title>Formulário de Funcionário</title>
+</head>
+<body>
+<section>
+    <h1> Formulário </h1>
+    <form method="GET" action="">
+
+    <fieldset>
+        <legend>Dados do funcionário</legend><br>
+
+        <label>Nome</label><br>
+        <input id="nomeFuncionario" type="text" name="nome"><br>
+
+        <label>Idade</label><br>
+        <input id="idadeFuncionario" type="number" name="idade"><br>
+
+        <label>Cargo</label><br>
+        <input id="cargoFuncionario" type="text" name="cargo"><br>
+    </fieldset>
+<br>
+    <fieldset>
+    <legend>Gerentes</legend><br>
+
+    <label>Departamento:</label><br>
+    <input placeholder="Apenas para Gerentes" id="depGerente" type="text"><br>
+    </fieldset><br>
+
+    <fieldset>
+    <legend>Programadores</legend><br>
+
+    <label>Linguagem de programação:</label><br>
+    <input placeholder="Apenas para Programadores" id="linProgramador" type="text"><br>
+    </fieldset>
+<br>
+
+    <button id="buttonEnviar" onclick="Enviar();return false">Enviar</button>
+    
+    </form>
+</section>
+        <br></br>
+        <hr>
+        <footer> Feito por Nicollas Silva</footer>
+</body>
+</html>
